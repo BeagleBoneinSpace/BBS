@@ -26,5 +26,6 @@ while (i<9): #while loop
 print "end of loop" #not really necessary 
 file = open("Untitled1.txt", "r") #have to open file again in read mode 
 print file.readlines() #read out 
+print ("123")
 
 file.close()
