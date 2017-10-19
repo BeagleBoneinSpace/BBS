@@ -7,10 +7,11 @@ import time
 
 #SHT31-D
 bus = smbus.SMBus(1) # Get I2C bus
-    bus.write_i2c_block_data(0x44, 0x2C, [0x06])
-	data = bus.read_i2c_block_data(0x44, 0x00, 6)
 
 while True: #while loop
+
+    bus.write_i2c_block_data(0x44, 0x2C, [0x06])
+	data = bus.read_i2c_block_data(0x44, 0x00, 6)
 
     file = open("Untitled1.txt", "a") #open file in append mode
     rawstamp = time.time() #time stamp value
