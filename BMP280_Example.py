@@ -4,7 +4,7 @@ import time
 sensor = BME280(t_mode=BME280_OSAMPLE_8, p_mode=BME280_OSAMPLE_8, h_mode=BME280_OSAMPLE_8)
 
 f = open('/root/Sensor_Data/Pressure/Pressure_Data.txt','a')
-
+#
 while True:
 	degrees = sensor.read_temperature()
 	pascals = sensor.read_pressure()
